@@ -239,7 +239,7 @@
             <!-- ticket info section -->
             <div class="bg-white mt-[47px] rounded-xl">
                 <!-- first part flex -->
-                <div class="flex gap-[233px] items-center pt-[32px] pl-[32px]">
+                <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[233px] items-center pt-[30px] pl-[32px]">
                     <!-- bus logo part -->
                     <div class="flex items-center gap-[14px]">
                         <div>
@@ -262,7 +262,7 @@
                 </div>
 
                 <!-- second part booking -->
-                <div class="mt-[24px] px-8 flex justify-between pb-8">
+                <div class="mt-[60px] lg:mt-[24px] px-8 flex lg:flex-row flex-col gap-6 lg:gap-0 justify-between pb-8 relative">
 
                     <!-- departure section -->
                     <div class="p-8 bg-[#F7F8F8] rounded-xl">
@@ -276,15 +276,15 @@
                                 Time</h1>
                             <h2 class="text-lg font-raleway text-black font-semibold leading-[21px]">9:00 PM</h2>
                         </div>
-                        <div class="mt-[24px] space-x-6">
+                        <div class=" flex flex-row justify-between mt-[24px] space-x-6">
                             <button
-                                class="text-[#030712CC] font-inter font-medium leading-[19px] px-[17px] py-[19px] rounded-xl bg-[#03070C0C]">Boarding
+                                class="text-[#030712CC] font-inter font-medium leading-[19px] px-1 lg:px-[17px] py-1 lg:py-[19px] rounded-xl bg-[#03070C0C]">Boarding
                                 Point - Laxmipur</button>
                             <button
-                                class="text-[#030712CC] font-inter font-medium leading-[19px] px-[17px] py-[19px] rounded-xl bg-[#03070C0C]">Dropping
+                                class="text-[#030712CC] font-inter font-medium leading-[19px] px-1 lg:px-[17px] py-1 lg:py-[19px] rounded-xl bg-[#03070C0C]">Dropping
                                 Point - Bogura</button>
                             <button
-                                class="text-[#030712CC] font-inter font-medium leading-[19px] px-[17px] py-[19px] rounded-xl bg-[#03070C0C]">Est.
+                                class="text-[#030712CC] font-inter font-medium leading-[19px] px-1 lg:px-[17px] py-1 lg:py-[19px] rounded-xl bg-[#03070C0C]">Est.
                                 Time - 11 Hour</button>
                         </div>
                     </div>
@@ -295,9 +295,14 @@
                         <h1 class="text-[32px] font-raleway font-bold text-black leading-[48px]">550 Taka</h1>
                         <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
                     </div>
+                    <div class=" hidden lg:flex absolute right-[250px] bottom-[0px]">
+                        <img src="./images/info-devider.png" alt="info devider">
+                    </div>
                 </div>
                 <!-- second part booking ends -->
-            </div>   
+            </div> 
+            
+            <!-- select seat section starts -->
             <div class="mt-8 bg-white">
                 <h1>seat your seat</h1>
             </div>
