@@ -306,9 +306,9 @@
 
             <!-- select seat section starts -->
             <div class="mt-8 bg-white p-8 rounded-xl">
-                <div class="grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- select seat heading -->
-                    <div class="border-r-[2px] border-dashed border-[#1DD100] pr-6">
+                    <div class="border-none lg:border-r-[2px] lg:border-dashed border-[#1DD100] pr-6">
                         <div class="border-b-[1px] border-black border-dashed">
                             <h1 class="font-raleway text-black text-2xl font-semibold leading-[28px] pb-[23px]">Select
                                 Your Seat</h1>
@@ -644,8 +644,10 @@
 
                             <!-- coupn section -->
                             <div class="mt-4 flex">
-                                <input class="py-5 pr-[180px] pl-[20px] font-inter text-[#03071299] rounded-l-lg" type="text" placeholder="Have any coupon">
-                                <button class="bg-[#1DD100] text-white font-semibold font-inter leading-[19px] py-[11px] px-[18px] rounded-r-lg">Apply</button>
+                                <input class="py-5 pr-[180px] pl-[20px] font-inter text-[#03071299] rounded-l-lg"
+                                    type="text" placeholder="Have any coupon">
+                                <button
+                                    class="bg-[#1DD100] text-white font-semibold font-inter leading-[19px] py-[11px] px-[18px] rounded-r-lg">Apply</button>
                             </div>
 
                             <!-- grand total section -->
@@ -659,30 +661,45 @@
                         <!-- name section -->
                         <div class="mt-6">
                             <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Name*</h1>
-                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text" placeholder="Enter your name">
+                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text"
+                                placeholder="Enter your name">
                         </div>
 
                         <!-- phone number section -->
                         <div class="mt-6">
                             <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Name*</h1>
-                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text" placeholder="Enter your phone number">
+                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text"
+                                placeholder="Enter your phone number">
                         </div>
 
                         <!-- email address section -->
                         <div class="mt-6">
                             <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Name*</h1>
-                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="email" placeholder="Enter your email id">
+                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="email"
+                                placeholder="Enter your email id">
                         </div>
+
+                        <!-- button section -->
                         <div class="mt-6">
-                            <button class="bg-[#1DD100] text-white font-raleway font-extrabold text-[20px] leading-[23px] w-full py-[21px] rounded-xl">Next</button>
+                            <button
+                                class="bg-[#1DD100] text-white font-raleway font-extrabold text-[20px] leading-[23px] w-full py-[21px] rounded-xl">Next</button>
+                        </div>
+
+                        <!-- terms and service section -->
+                        <div class="flex gap-[43px] justify-center mt-6">
+                            <p><a class="border-b-[1px] border-black text-[#03071299] leading-[19px] font-inter"
+                                    href="">Terms and Conditions</a></p>
+                            <p><a class="border-b-[1px] border-black text-[#03071299] leading-[19px] font-inter"
+                                    href="">Cancellation Policy</a></p>
                         </div>
                     </div>
+                    <!-- ticket section end -->
                 </div>
             </div>
-
-
+            <!-- select ticket section ends -->
         </section>
     </main>
+
     <!-- footer scetion starts -->
     <footer class="bg-black pb-[50px] lg:pb-[120px]">
 
