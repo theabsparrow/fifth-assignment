@@ -25,6 +25,20 @@
         .font-inter {
             font-family: "Inter", sans-serif;
         }
+        #seat-and-price > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        #seat-and-price > div > p {
+            font-size: 18px;
+            line-height: 19px;
+            font-family: "Inter", sans-serif;
+            color: #03071299;
+            text-align: center;
+            margin-top: 16px;
+        }
     </style>
     <!-- css custom color -->
     <script>
@@ -257,8 +271,8 @@
                     <div>
                         <button class="flex items-center gap-2 bg-[#1DD10026] py-[22px] px-[21px] rounded-xl"><img
                                 src="./images/seat-green.png" alt="seat green"><a
-                                class="text-[#1DD100] text-lg font-inter font-medium leading-[22px]" href="">40 Seats
-                                Left</a></button>
+                                class="text-[#1DD100] text-lg font-inter font-medium leading-[22px]" href=""><span id="fourty-seats-left">40</span> Seats Left</a></button>
+                                
                     </div>
                 </div>
 
@@ -617,7 +631,7 @@
                                 <div class="flex gap-2 items-end">
                                     <h1 class="text-black text-xl font-inter font-medium leading-[19px]">seat </h1>
                                     <div class=" bg-[#1DD100] px-2 rounded-lg">
-                                        <p class="text-white">0</p>
+                                        <p id="selected-seat" class="text-white">0</p>
                                     </div>
                                 </div>
                                 <h1 class="text-black text-xl font-inter font-medium leading-[19px]">Class</h1>
@@ -626,15 +640,15 @@
 
                             <!-- seat price section -->
                             <div class="mt-4 border-b-[1px] border-black pb-4">
-                                <div class="flex justify-between mb-4">
-                                    <p class="text-[#03071299] font-inter leading-[19px]">C2</p>
-                                    <p class="text-[#03071299] font-inter leading-[19px]">Economy</p>
-                                    <p class="text-[#03071299] font-inter leading-[19px]">550</p>
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-[#03071299] font-inter leading-[19px]">C2</p>
-                                    <p class="text-[#03071299] font-inter leading-[19px]">Economy</p>
-                                    <p class="text-[#03071299] font-inter leading-[19px]">550</p>
+                                <div id="seat-and-price">
+                                    <div>
+                                        
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                    <div></div>
+                                    <div></div>
                                 </div>
                             </div>
                             <div class="mt-4 flex justify-between">
