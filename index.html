@@ -116,8 +116,8 @@
                     testing features allow for a streamlined .
                 </p>
                 <div class="mt-8 text-center ">
-                    <button
-                        class="bg-[#1DD100] text-black p-[21px] font-raleway text-[20px] font-bold leading-[23px] rounded-xl">Bye
+                    <button id="bye-tickets"
+                        class="btn bg-[#1DD100] text-black border-none font-raleway text-[20px] font-bold leading-[23px] rounded-xl">Bye
                         Tickets</button>
                 </div>
             </div>
@@ -227,7 +227,7 @@
         </section>
         <!-- ticket section starts -->
         <section
-            class="container mx-auto mt-9 lg:px-[130px] bg-[#F7F8F8] border-t-[2px] border-[#1DD100] rounded-xl pb-[120px]">
+            class="container mx-auto mt-9 lg:px-[130px] bg-[#F7F8F8] border-t-[2px] border-[#1DD100] rounded-xl pb-[120px] relative">
             <!-- ticket heading -->
 
             <div class="pt-[120px] text-center">
@@ -305,7 +305,7 @@
             </div>
 
             <!-- select seat section starts -->
-            <div class="mt-8 bg-white p-8 rounded-xl">
+            <div id="select-your-seat" class="mt-8 bg-white p-8 rounded-xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- select seat heading -->
                     <div class="border-none lg:border-r-[2px] lg:border-dashed border-[#1DD100] pr-6">
@@ -341,11 +341,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">A</div>
                                     <div class="flex gap-[25px]">
                                         <div id="a1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             A1
                                         </div>
                                         <div id="a2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             A2
                                         </div>
                                     </div>
@@ -355,11 +355,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">B</div>
                                     <div class="flex gap-[25px]">
                                         <div id="b1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             B1
                                         </div>
                                         <div id="b2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             B2
                                         </div>
                                     </div>
@@ -369,11 +369,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">C</div>
                                     <div class="flex gap-[25px]">
                                         <div id="c1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             C1
                                         </div>
                                         <div id="c2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             C2
                                         </div>
                                     </div>
@@ -383,11 +383,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">D</div>
                                     <div class="flex gap-[25px]">
                                         <div id="d1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             D1
                                         </div>
                                         <div id="d2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             D2
                                         </div>
                                     </div>
@@ -397,11 +397,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">E</div>
                                     <div class="flex gap-[25px]">
                                         <div id="e1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             E1
                                         </div>
                                         <div id="e2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             E2
                                         </div>
                                     </div>
@@ -411,11 +411,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">F</div>
                                     <div class="flex gap-[25px]">
                                         <div id="f1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             F1
                                         </div>
                                         <div id="f2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             F2
                                         </div>
                                     </div>
@@ -425,10 +425,10 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">G</div>
                                     <div class="flex gap-[25px]">
                                         <div id="g1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             G1</div>
                                         <div id="g2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             G2
                                         </div>
                                     </div>
@@ -438,11 +438,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">H</div>
                                     <div class="flex gap-[25px]">
                                         <div id="h1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             H1
                                         </div>
                                         <div id="h2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             H2
                                         </div>
                                     </div>
@@ -452,11 +452,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">I</div>
                                     <div class="flex gap-[26px]">
                                         <div id="i1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             I1
                                         </div>
                                         <div id="i2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             I2
                                         </div>
                                     </div>
@@ -466,11 +466,11 @@
                                     <div class="text-lg text-[#03071299] font-inter font-medium leading-[22px]">J</div>
                                     <div class="flex gap-[25px]">
                                         <div id="j1"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             J1
                                         </div>
                                         <div id="j2"
-                                            class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                            class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                             J2
                                         </div>
                                     </div>
@@ -484,110 +484,110 @@
                                 <!-- a column -->
                                 <div class="flex gap-[25px]">
                                     <div id="a3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         A3
                                     </div>
                                     <div id="a4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         A4
                                     </div>
                                 </div>
                                 <!-- b column -->
                                 <div class="flex gap-[25px]">
                                     <div id="b3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         B3
                                     </div>
                                     <div id="b4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         B4
                                     </div>
                                 </div>
                                 <!-- c column -->
                                 <div class="flex gap-[25px]">
                                     <div id="c3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         C3
                                     </div>
                                     <div id="c4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         C4
                                     </div>
                                 </div>
                                 <!-- d column -->
                                 <div class="flex gap-[25px]">
                                     <div id="d3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         D3
                                     </div>
                                     <div id="d4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         D4
                                     </div>
                                 </div>
                                 <!-- e column -->
                                 <div class="flex gap-[25px]">
                                     <div id="e3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         E3
                                     </div>
                                     <div id="e4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         E4
                                     </div>
                                 </div>
                                 <!-- f column -->
                                 <div class="flex gap-[25px]">
                                     <div id="f3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         F3
                                     </div>
                                     <div id="f4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         F4
                                     </div>
                                 </div>
                                 <!-- g column -->
                                 <div class="flex gap-[25px]">
                                     <div id="g3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         G3
                                     </div>
                                     <div id="g4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         G4
                                     </div>
                                 </div>
                                 <!-- h column -->
                                 <div class="flex gap-[25px]">
                                     <div id="h3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         H3
                                     </div>
                                     <div id="h4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         H4
                                     </div>
                                 </div>
                                 <!-- i column -->
                                 <div class="flex gap-[26px]">
                                     <div id="i3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         I3
                                     </div>
                                     <div id="i4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-12 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         I4
                                     </div>
                                 </div>
                                 <!-- j column -->
                                 <div class="flex gap-[27px]">
                                     <div id="j3"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         J3
                                     </div>
                                     <div id="j4"
-                                        class="bus-seat bg-[#F7F8F8] py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
+                                        class="bus-seat bg-[#F7F8F8] cursor-pointer py-4 px-11 rounded-xl text-lg text-[#03071299] font-inter font-medium leading-[22px]">
                                         J4
                                     </div>
                                 </div>
@@ -617,7 +617,7 @@
                                 <div class="flex gap-2 items-end">
                                     <h1 class="text-black text-xl font-inter font-medium leading-[19px]">seat </h1>
                                     <div class=" bg-[#1DD100] px-2 rounded-lg">
-                                        <p class="text-white">2</p>
+                                        <p class="text-white">0</p>
                                     </div>
                                 </div>
                                 <h1 class="text-black text-xl font-inter font-medium leading-[19px]">Class</h1>
@@ -697,7 +697,20 @@
                 </div>
             </div>
             <!-- select ticket section ends -->
+
+            <div class="bg-white flex flex-col items-center py-[55px] w-[70vw] text-center lg:w-[50vw] mx-auto rounded-xl mt-6 absolute bottom-[600px] left-[100px] lg:left-[300px] border-[1px] border-black hidden">
+                <div>
+                    <img src="./images/success.png" alt="success png">
+                </div>
+                <h1 class="text-[#27AE60] font-raleway font-bold text-2xl leading-[28px] mt-[38px]">SUCCESS</h1>
+                <h1 class="mt-[38px] text-black text-xl font-inter font-medium ">Thank you for Booking Our Bus Seats.</h1>
+                <h1 class=" text-black text-xl font-inter font-medium ">We are working hard to find the best service and deals for you.</h1>
+                <p class="mt-[16px] text-xl font-inter font-medium leading-[19px] text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
+            </div>
         </section>
+
+        
+       
     </main>
 
     <!-- footer scetion starts -->
