@@ -123,6 +123,49 @@ for (i = 0; i < busSeats.length; i++) {
 
 
 // coupon section
+// const couponButton = document.getElementById("coupon-button");
+
+// function couponInput() {
+//     const inputCoupon = document.getElementById("coupon-input")
+//     let theField = true;
+//     if (inputCoupon.value.length === 0) {
+//         theField = false
+//     }
+//     else if (theField) {
+//         couponButton.disabled = false;
+//     }
+//     else {
+//         couponButton.disabled = true;
+//     }
+
+// }
+
+// function couponButton() {
+   
+//     const couponElement = inputCoupon.value;
+//     const couponCode = couponElement;
+//     inputCoupon.value = "Have any coupon"
+
+//     if (totalPrice >= 1100 && couponCode === "NEW15") {
+
+//         const discountAmount = totalPrice * 0.15;
+//         const discountGrandTotal = totalPrice - discountAmount;
+//         grandTotal.innerText = discountGrandTotal;
+//         return;
+//     }
+//     else if (totalPrice === 2200 && couponCode === "Couple 20") {
+
+//         const discount = totalPrice * 0.2
+//         const coupleDiscount = totalPrice - discount;
+//         grandTotal.innerText = coupleDiscount;
+//         return;
+//     }
+//     else {
+//         alert("bye atleast two tickets or invalid coupon code");
+//     }
+// }
+
+
 const couponButton = document.getElementById("coupon-button");
 couponButton.addEventListener('click', function () {
     const couponInput = document.getElementById("coupon-input");
@@ -165,24 +208,24 @@ couponButton.addEventListener('click', function () {
 
 const nextButton = document.getElementById("next-button");
 
-function checkform(){
+function checkform() {
     const inputInfo = document.getElementsByClassName("input-info")
     let fieldIsFiiled = true;
-    for (let i = 0; i < inputInfo.length; i++){
-        if (inputInfo[i].value.length === 0){
+    for (let i = 0; i < inputInfo.length; i++) {
+        if (inputInfo[i].value.length === 0) {
             fieldIsFiiled = false;
         }
     }
-    if(fieldIsFiiled){
+    if (fieldIsFiiled) {
         nextButton.disabled = false;
-        
+
     }
-    else{
+    else {
         nextButton.disabled = true;
     }
 }
 
-function ShowingSuccessPage(){
+function ShowingSuccessPage() {
     const SuccessPage = document.getElementById("success-page");
     SuccessPage.classList.remove("hidden");
 }
