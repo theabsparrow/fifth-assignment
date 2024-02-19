@@ -661,7 +661,7 @@
                                 <input id="coupon-input" class="py-3 pr-[180px] pl-[20px] font-inter text-[#03071299] rounded-l-lg"
                                     type="text" placeholder="Have any coupon">
                                 <button id="coupon-button"
-                                    class="btn bg-[#1DD100] text-white font-semibold font-inter leading-[19px] py-[11px] px-[18px] rounded-r-lg">Apply</button>
+                                    class="btn bg-[#1DD100] text-white font-semibold font-inter leading-[19px] py-[11px] px-[18px] rounded-r-lg" >Apply</button>
                             </div>
 
                             <!-- grand total section -->
@@ -675,28 +675,28 @@
                         <!-- name section -->
                         <div class="mt-6">
                             <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Name*</h1>
-                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text"
+                            <input onkeyup="checkform()" id="passenger-name" class="input-info border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text"
                                 placeholder="Enter your name">
                         </div>
 
                         <!-- phone number section -->
                         <div class="mt-6">
-                            <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Name*</h1>
-                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text"
+                            <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Phone Number*</h1>
+                            <input onkeyup="checkform()" id="passenger-number" class="input-info border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="text"
                                 placeholder="Enter your phone number">
                         </div>
 
                         <!-- email address section -->
                         <div class="mt-6">
-                            <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Name*</h1>
-                            <input class="border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="email"
+                            <h1 class="text-black font-inter font-semibold leading-[19px] mb-4">Passenger Email Id*</h1>
+                            <input onkeyup="checkform()" id="passenger-email" class="input-info border-[1px] border-[#03071219] rounded-lg py-6 w-full pl-4" type="email"
                                 placeholder="Enter your email id">
                         </div>
 
                         <!-- button section -->
                         <div class="mt-6">
-                            <button
-                                class="bg-[#1DD100] text-white font-raleway font-extrabold text-[20px] leading-[23px] w-full py-[21px] rounded-xl">Next</button>
+                            <button id="next-button" onclick="ShowingSuccessPage()"
+                                class="btn bg-[#1DD100] text-white font-raleway font-extrabold text-[20px] leading-[23px] w-full rounded-xl" disabled >Next</button>
                         </div>
 
                         <!-- terms and service section -->
@@ -712,7 +712,7 @@
             </div>
             <!-- select ticket section ends -->
 
-            <div class="bg-white flex flex-col items-center py-[55px] w-[70vw] text-center lg:w-[50vw] mx-auto rounded-xl mt-6 absolute bottom-[600px] left-[100px] lg:left-[300px] border-[1px] border-black hidden">
+            <div id="success-page" class="bg-white flex flex-col items-center py-[55px] w-[70vw] text-center lg:w-[50vw] mx-auto rounded-xl mt-6 absolute bottom-[600px] left-[100px] lg:left-[300px] border-[1px] border-black hidden">
                 <div>
                     <img src="./images/success.png" alt="success png">
                 </div>
