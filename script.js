@@ -16,20 +16,20 @@ let j = 0;
 for (i = 0; i < busSeats.length; i++) {
     const busSeat = busSeats[i];
     busSeat.addEventListener('click', function () {
-        busSeat.style.backgroundColor = "#1DD100"
+        // busSeat.style.backgroundColor = "#1DD100"
         const name = busSeat.innerText;
         j++
-        
+
         if (selectedBusSeat.includes(name) === false) {
             selectedBusSeat.push(name);
-            
-            if (selectedBusSeat.length > 4) {
-                alert ("you can't bye more than four tickets together");
-                return;
-                
-            }
-            else{
 
+            if (selectedBusSeat.length > 4) {
+                alert("you can't bye more than four tickets together");
+                return;
+
+            }
+            else {
+                busSeat.style.backgroundColor = "#1DD100"
                 // total seats decreasing section
                 const fourtySeatsLeft = document.getElementById("fourty-seats-left");
                 const fourtySeatsNumber = fourtySeatsLeft.innerText;
@@ -65,7 +65,7 @@ for (i = 0; i < busSeats.length; i++) {
                 totalPrice += ticketPrice;
                 totalAmount.innerText = totalPrice;
 
-                
+
                 // grand total amount section
                 const grandTotal = document.getElementById("grand-total");
                 grandTotalPrice += ticketPrice;
@@ -82,7 +82,7 @@ couponButton.addEventListener('click', function () {
     const couponElement = couponInput.value;
     const couponCode = couponElement;
     couponInput.value = ""
-    
+
     // coupon section
 
     if (totalPrice === 2200 && couponCode === "NEW15") {
@@ -107,14 +107,14 @@ couponButton.addEventListener('click', function () {
 const nextButton = document.getElementById("next-button");
 
 function checkform() {
-    const inputInfo = document.getElementsByClassName("input-info")
+    const passengerNumber = document.getElementById("passenger-number");
     let fieldIsFiiled = true;
-    for (let i = 0; i < inputInfo.length; i++) {
-        if (inputInfo[i].value.length === 0) {
-            fieldIsFiiled = false;
-        }
+
+    if (passengerNumber.value.length === 0) {
+        fieldIsFiiled = false;
     }
-    if ((fieldIsFiiled) && (selectedBusSeat.length > 0) ) {
+
+    else if ((fieldIsFiiled) && (selectedBusSeat.length > 0)) {
         nextButton.disabled = false;
 
     }
