@@ -85,7 +85,7 @@ couponButton.addEventListener('click', function () {
     
     // coupon section
 
-    if (totalPrice >= 1100 && couponCode === "NEW15") {
+    if (totalPrice === 2200 && couponCode === "NEW15") {
 
         const discountAmount = totalPrice * 0.15;
         const discountGrandTotal = totalPrice - discountAmount;
@@ -100,7 +100,7 @@ couponButton.addEventListener('click', function () {
         return;
     }
     else {
-        alert("bye atleast two tickets or invalid coupon code");
+        alert("bye atleast four tickets or invalid coupon code");
     }
 })
 
