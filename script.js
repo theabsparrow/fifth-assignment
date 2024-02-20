@@ -90,6 +90,14 @@ couponButton.addEventListener('click', function () {
         const discountAmount = totalPrice * 0.15;
         const discountGrandTotal = totalPrice - discountAmount;
         grandTotal.innerText = discountGrandTotal;
+
+        const discountedDiv = document.getElementById("discounted-div")
+        const h1 = document.createElement("h1");
+        const h2 = document.createElement("h2");
+        h1.innerText = "Discount";
+        h2.innerText = discountAmount;
+        discountedDiv.appendChild(h1);
+        discountedDiv.appendChild(h2);
         return;
     }
     else if (totalPrice === 2200 && couponCode === "Couple 20") {
@@ -97,6 +105,14 @@ couponButton.addEventListener('click', function () {
         const discount = totalPrice * 0.2
         const coupleDiscount = totalPrice - discount;
         grandTotal.innerText = coupleDiscount;
+
+        const discountDiv = document.getElementById("discounted-div")
+        const h1 = document.createElement("h1");
+        const h2 = document.createElement("h2");
+        h1.innerText = "Discount";
+        h2.innerText = discount;
+        discountDiv.appendChild(h1);
+        discountDiv.appendChild(h2);
         return;
     }
     else {
