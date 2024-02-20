@@ -12,15 +12,17 @@ byeTickets.addEventListener('click', function () {
 
 const busSeats = document.getElementsByClassName("bus-seat");
 let selectedBusSeat = [];
-
+let j = 0;
 for (i = 0; i < busSeats.length; i++) {
     const busSeat = busSeats[i];
     busSeat.addEventListener('click', function () {
         busSeat.style.backgroundColor = "#1DD100"
         const name = busSeat.innerText;
+        j++
+        console.log(j);
         if (selectedBusSeat.includes(name) === false) {
             selectedBusSeat.push(name);
-
+            console.log(selectedBusSeat);
             if (selectedBusSeat.length <= 4) {
                 // fourty seat left
                 const fourtySeatsLeft = document.getElementById("fourty-seats-left");
@@ -57,19 +59,21 @@ for (i = 0; i < busSeats.length; i++) {
                 totalPrice += ticketPrice;
                 totalAmount.innerText = totalPrice;
 
+                
                 // grand total amount section
                 const grandTotal = document.getElementById("grand-total");
                 grandTotalPrice += ticketPrice;
                 grandTotal.innerText = grandTotalPrice;
 
-                if (totalAmount === 2200) {
-                    alert = ("you cant bye more than two ticket together");
+                if(grandTotalPrice === 2200){
+                    alert ("you can't bye more than four ticket at a time");
                     return;
                 }
             }
         }
     })
 }
+console.log(totalPrice);
 
 
 
