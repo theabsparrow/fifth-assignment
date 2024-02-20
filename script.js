@@ -1,18 +1,22 @@
-const byeTickets = document.getElementById("bye-tickets");
+const buyTickets = document.getElementById("buy-tickets");
 let totalPrice = 0;
 let grandTotalPrice = 0;
 let grandTotal = document.getElementById("grand-total");
 
 
-
-byeTickets.addEventListener('click', function () {
+// buy button section starts
+buyTickets.addEventListener('click', function () {
     const selectYourSeat = document.getElementById("select-your-seat");
     selectYourSeat.scrollIntoView();
 })
+// buy button section ends
 
+// variable for outside the unction uses
 const busSeats = document.getElementsByClassName("bus-seat");
 let selectedBusSeat = [];
 let j = 0;
+
+// bus seat selection section starts
 for (i = 0; i < busSeats.length; i++) {
     const busSeat = busSeats[i];
     busSeat.addEventListener('click', function () {
@@ -75,7 +79,10 @@ for (i = 0; i < busSeats.length; i++) {
         }
     })
 }
+// bus seat selection ends
 
+
+// coupon section starts
 const couponButton = document.getElementById("coupon-button");
 couponButton.addEventListener('click', function () {
     const couponInput = document.getElementById("coupon-input");
@@ -83,43 +90,42 @@ couponButton.addEventListener('click', function () {
     const couponCode = couponElement;
     couponInput.value = ""
 
-    // coupon section
+    const discounth1 = document.getElementById("discount-h1");
+    const discounth2 = document.getElementById("discount-h2");
+    const discounth2Price =document.getElementById("discount-amount");
 
+    // for coupon code new15
     if (totalPrice === 2200 && couponCode === "NEW15") {
 
         const discountAmount = totalPrice * 0.15;
         const discountGrandTotal = totalPrice - discountAmount;
         grandTotal.innerText = discountGrandTotal;
 
-        const discountedDiv = document.getElementById("discounted-div")
-        const h1 = document.createElement("h1");
-        const h2 = document.createElement("h2");
-        h1.innerText = "Discount";
-        h2.innerText = discountAmount;
-        discountedDiv.appendChild(h1);
-        discountedDiv.appendChild(h2);
-        return;
-    }
+        discounth1.classList.remove("hidden");
+        discounth2.classList.remove("hidden");
+       discounth2Price.innerText = discountAmount;
+    
+    } 
+
+    // for coupon code couple 20
     else if (totalPrice === 2200 && couponCode === "Couple 20") {
 
         const discount = totalPrice * 0.2
         const coupleDiscount = totalPrice - discount;
         grandTotal.innerText = coupleDiscount;
 
-        const discountDiv = document.getElementById("discounted-div")
-        const h1 = document.createElement("h1");
-        const h2 = document.createElement("h2");
-        h1.innerText = "Discount";
-        h2.innerText = discount;
-        discountDiv.appendChild(h1);
-        discountDiv.appendChild(h2);
-        return;
+        discounth1.classList.remove("hidden");
+        discounth2.classList.remove("hidden");
+       discounth2Price.innerText = discount;
+
     }
     else {
         alert("bye atleast four tickets or invalid coupon code");
     }
 })
+// coupon section ends  
 
+// input filed section
 const nextButton = document.getElementById("next-button");
 
 function checkform() {
@@ -139,6 +145,7 @@ function checkform() {
     }
 }
 
+// modal visible section
 function ShowingSuccessPage() {
     const SuccessPage = document.getElementById("success-page");
     SuccessPage.classList.remove("hidden");
